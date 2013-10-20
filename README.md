@@ -7,12 +7,12 @@ This Repo is dedicated to optimizing and prettifying this algorithm
 
 ### The Algorithm
 The basic logic is as follows:
-1. Move towards the "target" 
-..1. Locate target
-..2. Calculate velocity towards target, on a scale of 0-1
-..3. Mulitply the above by speed and add to current velocity
-2. Flock and repel from the flock
-..* To lazy to fill this out now
+* Move towards the "target" 
+  * Locate target
+  * Calculate velocity towards target, on a scale of 0-1
+  * Mulitply the above by speed and add to current velocity
+* Flock and repel from the flock
+  * To lazy to fill this out now
 
 ### The Hacked Up Implementation
 ```java
