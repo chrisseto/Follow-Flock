@@ -16,18 +16,18 @@ The basic logic is as follows:
 
 ### Now The Actual Algorithm
 * A vector is a point class that thinks it's an angle
-```python
-Vector New Velocity = Target Vector - This Vector
-Normalize New Velocity'
-Mulitply New Velocity By Desired Speed
-For Each Ball In The Hoard
-Vector Velocity Modifier = This Vector - That Vector
-Divide Velocity Modifier By The Distance From That Vector''
-Multiply Velocity Modifier By (Attraction Modifier * Size Of Ball) / The Distance From That Vector
-Add Velocity Modifier To New Velocity
-Velocity = New Velocity
-When Added To The Position Vector The Ball Will Seek The Target But Avoid Collision With The Hoard
-```
+
+1. Vector New Velocity = Target Vector - This Vector
+2. Normalize New Velocity'
+3. Mulitply New Velocity By Desired Speed
+4. For Each Ball In The Hoard
+5. Vector Velocity Modifier = This Vector - That Vector
+6. Divide Velocity Modifier By The Distance From That Vector''
+7. Multiply Velocity Modifier By (Attraction Modifier * Size Of Ball) / The Distance From That Vector
+8. Add Velocity Modifier To New Velocity
+9. Velocity = New Velocity
+10. When Added To The Position Vector The Ball Will Seek The Target But Avoid Collision With The Hoard
+
 * Notes:
   * 'Normalize means to scale down the x and y such that the magnitude, sqrt(X^2+Y^2), is 1
   * ''This value can sometimes be less than or equal to 0
